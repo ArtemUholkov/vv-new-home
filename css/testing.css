@@ -192,3 +192,28 @@
     width: 100%;
   }
 }
+@media (max-width: 700px) {
+  .testing_title {
+    margin-bottom: 0 !important;
+    max-width: 242px;
+  }
+  .testing_item_title {
+    font-size: 22px;
+    text-align: center;
+  }
+  .testing_item_subtitle {
+    font-size: 18px;
+    max-width: 285px;
+  }
+  .testing_item {
+    width: 330px;
+  }
+  .testing {
+    padding-top: 100px;
+  }
+  .testing_items_wrapper {
+    position: relative;
+    top: -70px;
+    z-index: 5;
+  }
+}
