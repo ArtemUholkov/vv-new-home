@@ -1,0 +1,304 @@
+.shop {
+  padding-top: 180px;
+  padding-left: 150px;
+  padding-right: 150px;
+  width: 100%;
+}
+.shop_wrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.shop_deco_line {
+  position: absolute;
+  bottom: 130px;
+  left: 0;
+  width: 100%;
+  height: 134px;
+  background-color: #bdd8e8;
+  z-index: -1;
+  border-radius: 10px;
+}
+.shop_content_wrapper {
+  display: flex;
+  margin: 0 auto;
+}
+.shop_content_tabs_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.shop_img_texts_wrapper {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+}
+.shop_img {
+  max-width: 837px;
+  max-height: 450px;
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+}
+.shop_texts {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.shop_texts_title {
+  color: #000;
+  font-family: 'Gotham-bold';
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.shop_texts_subtitle {
+  color: #000;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: 'Gotham-normal';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  max-width: 458px;
+}
+.shop_texts_button {
+  display: flex;
+  padding: 18px 52px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 30px;
+  background: var(--Button-color, #2d2d2d);
+  color: var(--white, #fff);
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 15px;
+  letter-spacing: -0.36px;
+
+  transition: all 0.3s;
+  max-width: 293px;
+}
+.shop_texts_button:hover {
+  background: #f9a351;
+  color: #fff;
+  transition: all 0.3s;
+}
+.shop_tabs_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.shop_tab {
+  display: flex;
+  flex-direction: column;
+  width: 261px;
+  height: 211px;
+  padding: 22px 8px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 12px;
+  background: var(--White, #fefdfd);
+  box-shadow: 2px 4px 12px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.shop_tab_img {
+  height: 120px;
+  transition: all 0.3s;
+  position: relative;
+  top: 0;
+}
+.shop_tab_title {
+  color: #000;
+  text-align: center;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: 'Gotham-normal';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  position: relative;
+  top: 0;
+  transition: all 0.3s;
+}
+.shop_tab:hover {
+  cursor: pointer;
+}
+.shop_tab:hover img {
+  height: 173px;
+  top: 20px;
+  transition: all 0.3s;
+}
+.shop_tab:hover .shop_tab_title {
+  top: 30px;
+  transition: all 0.3s;
+}
+
+.shop_tab.activated img {
+  height: 173px;
+  top: 20px;
+}
+.shop_tab.activated .shop_tab_title {
+  top: 35px;
+}
+.shop_tab.activated {
+  border: 2px solid var(--Sky-Blue---New, #4a9bc4);
+}
+@media (max-width: 1770px) {
+  .shop {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media (max-width: 1550px) {
+  .shop {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .shop_tab {
+    width: 220px;
+  }
+}
+
+.shop_texts_subtitle.mob_texts {
+  display: none;
+}
+.mob_button {
+  display: none;
+}
+.m_img {
+  display: none;
+}
+
+/* Adjust for 3.8 slides visible */
+@media (max-width: 1300px) {
+  .shop_tab {
+    /* Showing 3.8 slides */
+    border-radius: 8.676px;
+    background: #fefdfd;
+    box-shadow: 1.446px 2.892px 8.676px 0px rgba(0, 0, 0, 0.1);
+    width: 190px;
+  }
+  .shop_tab_title {
+    font-size: 13px;
+  }
+  .shop_texts {
+    display: none;
+  }
+  .shop_texts_subtitle.mob_texts {
+    display: block;
+    margin-bottom: 22px;
+    max-width: 263px;
+    line-height: 130%;
+    padding-left: 20px;
+  }
+  .shop_title {
+    margin-bottom: 10px !important;
+    padding-left: 20px;
+  }
+  .shop {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .mob_button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 22px;
+  }
+  .shop_deco_line {
+    bottom: 215px;
+  }
+  .shop_img {
+    max-width: 315px;
+    max-height: 637.368px;
+  }
+  .shop_img_texts_wrapper {
+    position: relative;
+    top: 20px;
+  }
+}
+@media (max-width: 1075px) {
+  .d_img {
+    display: none;
+  }
+  .m_img {
+    display: block;
+  }
+  .shop_tabs_wrapper {
+    gap: 15px;
+  }
+  .shop_wrapper {
+    position: relative;
+    overflow: hidden; /* Prevents overflow of content outside the wrapper */
+  }
+
+  /* Container for the scrollable tabs */
+  .shop_tabs_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Enable snap scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling */
+    white-space: nowrap; /* Ensure items don't wrap */
+    position: absolute; /* Ensure proper positioning */
+    bottom: -130px;
+    width: 100%;
+    justify-content: initial;
+  }
+
+  /* Show scrollbar on WebKit browsers */
+  .shop_tabs_wrapper::-webkit-scrollbar {
+    height: 8px; /* Adjust the height of the scrollbar */
+  }
+
+  .shop_tabs_wrapper::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Track color */
+  }
+
+  .shop_tabs_wrapper::-webkit-scrollbar-thumb {
+    background: #888; /* Thumb color */
+    border-radius: 10px; /* Rounded corners */
+  }
+
+  .shop_tabs_wrapper::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Thumb color on hover */
+  }
+
+  /* Hide scrollbar in Firefox and IE */
+  .shop_tabs_wrapper {
+    -ms-overflow-style: scrollbar; /* Show scrollbar for IE and Edge */
+    scrollbar-width: auto; /* Show scrollbar for Firefox */
+  }
+  .shop_content_wrapper {
+    position: relative;
+
+    justify-content: initial;
+  }
+  /* Individual tab styles */
+  .shop_tab {
+    flex: 0 0 auto; /* Prevent shrinking and allow horizontal scrolling */
+    width: 190px; /* Fixed width for each tab */
+    scroll-snap-align: start; /* Align to the start of the scroll container */
+    transition: transform 0.3s ease-in-out;
+  }
+  .shop_texts_button.mob_button {
+    margin-top: 150px;
+    position: relative;
+  }
+  .shop_deco_line {
+    bottom: 180px;
+  }
+  .shop {
+    padding-top: 100px;
+  }
+}
